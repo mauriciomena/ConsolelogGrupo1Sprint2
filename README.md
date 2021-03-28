@@ -1,6 +1,8 @@
 Temática:
 Mercado online de frutas y verduras
 
+Enlace del Tablero de trabajo en trello: https://trello.com/b/4Y5KhZ9u/verdu-market
+
 ¿Qué productos o servicios brindará nuestro sitio?
 - Artículos de verdulería
 - Artículos de almacén
