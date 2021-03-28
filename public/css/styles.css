@@ -1,4 +1,3 @@
-/* Ajuste universal. No tocar */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -19,68 +18,145 @@ body {
 3) Paleta de colores (temporal, despues la definimos)
 https://colorhunt.co/palette/258285
 4) Trabajar las clases en ingles
+5) Solo trabajar MARGIN-BOTTOM (margenes hacia abajo)
 */
 
 
-header {
-  width: 100vw;
-  border: 2px solid blue;
+/* Trabajo sobre el menú hamburguesa y listado desplegable */
+#menu-options {
+  display: block;
+  margin: 15px;
+  /* 
+  NICO: verificar media querie
+  position: relative;
+  top: 15px;
+  left: 10px; */
+  z-index: 1;
+}
+#menu-options a {
+  text-decoration: none;
+  color: #232323;
+  transition: color 0.3s ease;
+}
+#menu-options a:hover {
+  color: #98ded9;
+}
+#menu-options input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+}
+#menu-options span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #161d6f;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+#menu-options span:first-child {
+  transform-origin: 0% 0%;
+}
+#menu-options span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+#menu-options input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #98ded9;
+}
+#menu-options input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+#menu-options input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+#menu {
+  position: absolute;
+  width: 150vw;
+  margin: -110px 0 0 -60px;
+  padding-left: 55px;
+  padding-top: 110px;
+  background: #c7ffd8;
+  list-style-type: none;
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+#menu li {
+  padding: 10px 0;
+  font-size: 22px;
+}
+#menu-options input:checked ~ ul {
+  transform: none;
 }
 
-/* Posicionamiento dentro del nav */
+
+
+/* Trabajo sobre el nav */
 nav {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  background-color: #f6f6f6;
-  border: 2px solid red;
-  height: 40px;
+  flex-direction: column;
 }
-ul {
-  list-style: none;
+header img {
+  display: block;
+  width: 100vw;
+  margin-bottom: 30px;
+}
+
+
+
+/* Trabajo sobre main */
+/* Seccion Pedir*/
+main .order {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5em;
+  text-align: center;  
 }
-li {
-  margin-left: 10px;
-  font-size: 10px;
+.order h3 {
+  margin-bottom: 10px;
+}
+.order p {
+  margin-bottom: 40px;
+}
+.order .order-button {
+  border: none;
+  padding: 16px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.order .order-button:hover {
+  background-color: #008CBA;
+  color: white;
 }
 
 
-/* Trabajo sobre el menu hamburguesa */
-#menu {
-    display: none;
+
+.order i {
+  color: #ffff00;
 }
-label, label::before, label::after {
-    width: 25px;
-    height: 3px;
-    position: absolute;
-    transition: 0.4s;
-    border-radius: 5px;
-    background-color: #161d6f;
-}
-label {
-    cursor: pointer;
-    top: 4%;
-    left: 4%;
-    /* top: 50%;
-    left: 50%; */
-    /* margin-left: -50px;
-    margin-top: -7.5px; */
-}
-label::before {
-    content: "";
-    transform: translateY(-7px);
-}
-label::after {
-    content: "";
-    transform: translateY(7px);
-}
-#menu:checked + label {
-    width: 0px;
-}
-#menu:checked + label::before {
-    transform: rotate(45deg) translate(0px);
-}
-#menu:checked + label::after {
-    transform: rotate(-45deg) translate(0px);
+.logo {
+  display: block;
+  width: 100vw;
+  padding: 45px;
 }
