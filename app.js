@@ -33,6 +33,11 @@ app.get('/template', (req, res) => {
     res.sendFile(path.join(__dirname, './views/template.html'));
 });//Formulario de login (login.html)
 
+app.get('/template2', (req, res) => {
+    res.sendFile(path.join(__dirname, './views/template2.html'));
+});//Formulario de login (login.html)
+
+
 
 app.listen(port, () => {
     console.log('VerduMarket Run on port '+ port);

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/css/normalize.css" />
     <link rel="stylesheet" href="/css/template.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"/>        
@@ -14,40 +15,33 @@
 </head>
 
 <body>
-  <header>
-         <div class="burger-menu">
-        <i class="fa fa-bars burger"></i>
-    </div>
-   
+  <p> BARRITA</p>
+  <header> 
+    
     <nav class = "menu" >
-          <ul class="menu-options">
-              <li> <a href="/views/Contacto.html">Quienes Somos </a></li>
-              <li> <a href="/views/index.html">Productos </a></li>
-              <li> <a href="/views/informacion.html">Zonas de Envío </a></li>
+      <nav role="navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menu">
+            <a href="#"><li>Productos</li></a>
+            <a href="#"><li>Zonas de Envío</li></a>
+            <a href="#"><li>Quienes Somos</li></a>
+            <a href="#"><li>Contacto</li></a>         
           </ul>
-          <ul class="menu-log">
-            <li><a href="/views/register.html"> Creá tu cuenta 
-                <span class="fas fa-address-card"></span>
-                </a></li>
-            <li><a href="/views/login.html"> Ingresá 
-                <sapn class="fas fa-sign-in-alt"></sapn>
-                </a></li>
-            <li><a href="#"> Mis compras 
-                <sapn class="fas fa-shopping-basket"></sapn>
-                </a></li>
-        </ul>
+        </div>
       </nav>
-      <div class= "logo">
+
+    <div class= "logo">
         <img src=/images/logo1.png  alt="Logo" width=200px >
       </div>
-      <input class="login" type="search" placeholder=" Usuario ">
-      <div class="contenedor">
-      <span class="fas fa-search"></span>
-    </div>
-    <input class="password" type="search" placeholder=" Contrasena ">
-      <div class="contenedor">
-      <span class="fas fa-search"></span>
-    </div>
+    
+    <div class="contenedor">
+        <input class="login" type="search" placeholder=" Usuario ">
+        <span class="fas fa-user"></span>
+        <input class="password" type="search" placeholder=" Contrasena ">
+        <span class="fas fa-key"></span>
+      </div>
       
   </header>
 <body>
