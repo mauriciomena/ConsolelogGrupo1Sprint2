@@ -8,15 +8,15 @@ body{
 }
 
  .banner {
-    background-color: rgb(212, 211, 209);
-    border: 1px solid  cornsilk;
+    background-color: white;
+    border: 1px solid  white;
 }
 
 
 /* header */
 header{
-    background-color:  #4C8055;
-    border: 1px solid  #4C8055;
+    background-color: #8cb944;
+    border: 1px solid  #8cb944;
     width: 100%;
     box-sizing: border-box;
     text-align: center;
@@ -30,7 +30,7 @@ header{
 
 header nav{
     text-align: center;
-    background-color: beige;
+    background-color: #8cb944;
     margin: 5px;
     align-items: center;
 }
@@ -40,7 +40,7 @@ header nav ul li{
 }
 header nav ul a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 /* header login */
