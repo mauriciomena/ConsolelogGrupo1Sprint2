@@ -1,19 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/normalize.css" />
-    <link rel="stylesheet" href="/css/register.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />    
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href='/css/register.css' />
+  <link rel="stylesheet" href='/css/normalize.css' />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+  <title>Formá parte de nuestra comunidad</title>
 </head>
+
 <body>
-    
+  <header>
+    <nav role="navigation">
+      <div id="menu-options">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="menu">
+          <a href="#"><li>Productos</li></a>
+          <a href="#"><li>Zonas de Envío</li></a>
+          <a href="#"><li>Quienes Somos</li></a>
+          <a href="#"><li>Contacto</li></a>         
+        </ul>
+      </div>
+    </nav>
+    <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="Vegetales">
+  </header>
+  <main class="main-register">
+    <section>
+      <div class="register">
+        <marquee>Registrate y Obtene Beneficios</marquee>
+        <form action="/" class="formulario">
+          <div class="form-control">
+            <input type="text" name="name" id="name" placeholder="Nombre" required class="control">
+            <span class="Feedback"></span>
+          </div>
+          <div class="form-control">
+            <input type="text" name="lastname" id="lastname" placeholder="Apellido" required class="control" >
+            <span class="Feedback"></span>
+          </div>          
+          <div class="form-control">
+            <input type="text" name="user" id="user" placeholder="Nombre de usuario" required class="control" >
+            <span class="Feedback"></span>
+          </div>
+          <div class="form-control">
+            <label for="dateBrith">Fecha de Nacimiento:</label>
+            <input type="date" name="dateBrith" id="dateBrith" class="control">
+          </div>
+
+          <div class="form-control form-address" >
+            <input type="text" name="address" id="address" placeholder="Domicilio" class="control" required>
+            <div class="address-especification">
+              <label for="numaddress">Nro:</label>
+              <input type="number" name="numaddress" id="numaddress" placeholder="123" class="control" required>
+            </div>
+            <div class="address-especification">
+              <label for="floor">Piso:</label>
+              <input type="text" name="floor" id="floor" placeholder="PB" class="control">
+            </div>              
+            <div class="address-especification">
+              <label for="numFloor">Nro:</label>
+              <input type="number" name="numFloor" id="numFloor" placeholder="0" class="control">
+            </div>
+          </div>
+          <div class="form-control">
+            <label for="city">Localidad:</label>
+                <select name="city" id="city" class="control" required>
+                    <option value="CF">Capital Federal</option>
+                    <option value="Co">Cordoba</option>
+                    <option value="Ro">Rosario</option>
+                    <option value="MZ">Mendoza</option>
+                </select>
+          </div>
+          <div class="form-control">
+            <input type="email" name="email" id="email" placeholder="usuario@gmail.com" class="control" required>
+            <span class="Feedback"></span>
+          </div>
+          <div class="form-control">
+            <input type="password" name="pass" id="pass" placeholder="Contraseña" class="control" required>
+          </div>
+          <div class="form-control">
+            <input type="password" name="confirmpass" id="confirmpass" placeholder="Confirmar contraseña"
+              class="control" required>
+          </div>
+          <div class="form-control">
+            <label for="fiscalCondition">Condicion Fiscal:</label>
+            <select name="fiscalCondition" class="control" id="fiscalCondition">
+              <option selected value="CF">Consumidor Final</option>
+              <option value="RI">Responsable Inscripto</option>
+              <option value="Mo">Monotributo</option>
+              <option value="Ex">Exento</option>
+              <option value="NC">No categorizado</option>
+            </select>
+          </div>
+          <div class="form-control">
+            <input type="number" name="idfiscal" id="idfiscalame" placeholder="Cuit" required class="control">
+            <span class="Feedback"></span>
+          </div>
+          <div class="check">
+            <label for="agree">Acepto los terminos y condiciones de este sitio</label>
+              <input type="radio" name="agree" id="agree" required> 
+            <br>
+            <label for="newsleter">Deseo recibir promociones y ofertas por e-mail</label>
+              <input type="radio" name="newsleter" id="newsleter" >
+          </div>          
+          <br>
+          <img src="/images/captcha.png" alt="Captcha">
+          <div class="form-control buttons">
+            <input type="submit" value="Enviar" class="submit button-form">
+            <input type="reset" value="Limpiar" class="button-form">
+          </div>
+        </form>
+    </section>
+  </main>
+  </div>
 </body>
+
 </html>
