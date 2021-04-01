@@ -13,19 +13,19 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, './views/index.html'));
 });//Home (index.html)
 
-app.get('/', (req, res) => {
+app.get('/productDetail', (req, res) => {
     res.sendFile(path.join(__dirname, './views/productDetail.html'));
 });//Detalle del producto (productDetail.html)
 
-app.get('/', (req, res) => {
+app.get('/productCart', (req, res) => {
     res.sendFile(path.join(__dirname, './views/productCart.html'));
 });//Carrito de compras (productCart.html)
 
-app.get('/', (req, res) => {
+app.get('/register', (req, res) => {
     res.sendFile(path.join(__dirname, './views/register.html'));
 });//Formulario de registro (register.html)
 
-app.get('/', (req, res) => {
+app.get('/login', (req, res) => {
     res.sendFile(path.join(__dirname, './views/login.html'));
 });//Formulario de login (login.html)
 
