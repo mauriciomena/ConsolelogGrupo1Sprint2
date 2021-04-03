@@ -1,19 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/normalize.css" />
-    <link rel="stylesheet" href="/css/productCart.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/normalize.css" />
+  <link rel="stylesheet" href="/css/template2.css" />
+  <link rel="stylesheet" href="/css/register.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <title>Carrito</title>
 </head>
+
 <body>
-    
+  <p class="banner"> ¡REGISTRATE Y OBTENÉ UN 10% DE DESCUENTO EN TU PRIMERA COMPRA! ¡SI TU COMPRA ES MAYOR A $3500
+    TENÉS EL ENVÍO BONIFICADO!</p>
+  <header>
+    <img class="logo" src=/images/logo3.png alt="Logo" height="80px">
+    <nav role="navigation">
+      <ul id="menu-options">
+        <input type="checkbox" />
+        <li><a href="#"> Productos
+            <span class="fas fa-carrot"></span>
+          </a></li>
+        <li><a href="#"> Zonas de Envío
+            <sapn class="fas fa-map-marked-alt"></sapn>
+          </a></li>
+        <li><a href="#"> Quienes Somos
+            <sapn class="fas fa-users"></sapn>
+          </a></li>
+        <li><a href="#"> Contacto
+            <sapn class="fas fa-tty"></sapn>
+          </a></li>
+      </ul>
+    </nav>
+    <form action="/login" method="POST">
+      <p>
+        <label> Nombre:</label>
+        <input type="text" name="usuario">
+      </p>
+      <p>
+        <label> Contrasena:</label>
+        <input type="password" name="contrasena">
+      </p>
+      <p>
+        <button type="submit">Enviar</button>
+      </p>
+    </form>
+  </header>
+  <main>
+    <section>
+      <h4>Mi pedido</h4>
+      <form action="POST" class="cart-items">
+        <article>
+          <i class="fas fa-trash"></i>
+          <h4>Zanahorias mini</h4>
+          <h5>Valor por Kilo</h5>
+          <h4>Cantdad</h4>
+          <div class="form-control">
+            <input type="number" name="amount" value="1" min="1" max="50" step="1" class="amount control" />
+          </div>
+          <h3 class="value">$130</h3>
+          <hr>          
+        </article>
+        <article>
+          <i class="fas fa-trash"></i>
+          <h4>Zanahorias mini</h4>
+          <h5>Valor por Kilo</h5>
+          <h4>Cantdad</h4>
+          <div class="form-control">          
+            <input type="number" name="cant" value="1" min="1" max="50" step="1" class="amount control" />
+          </div>
+          <h3 class="value">$130</h3>
+          <hr>          
+        </article>
+        <article>
+          <i class="fas fa-trash"></i>
+          <h4>Zanahorias mini</h4>
+          <h5>Valor por Kilo</h5>
+          <h4>Cantdad</h4>
+          <div class="form-control">          
+            <input type="number" name="cant" value="1" min="1" max="50" step="1" class="amount control" />
+          </div>
+          <h3 class="value">$130</h3>
+          <hr>          
+        </article>
+        <article>
+          <i class="fas fa-trash"></i>
+          <h4>Zanahorias mini</h4>
+          <h5>Valor por Kilo</h5>
+          <h4>Cantdad</h4>
+          <div class="form-control">          
+            <input type="number" name="cant" value="1" min="1" max="50" step="1" class="amount control" />
+          </div>
+          <h3 class="value">$130</h3>
+          <hr>          
+        </article>
+
+
+
+      </form>
+
+
+
+      
+    </section>
+  </main>
+  <footer></footer>
 </body>
+
 </html>
