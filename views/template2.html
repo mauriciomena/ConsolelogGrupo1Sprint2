@@ -19,22 +19,37 @@
 
         <img class="logo" src=/images/logo3.png  alt="Logo" height="80px">
 
-        <nav>
-            <ul id="menu">
-                <li><a href="#"> Productos
-                    <span class="fas fa-carrot"></span>
-                    </a></li>
-                <li><a href="#"> Zonas de Envío
-                    <sapn class="fas fa-map-marked-alt"></sapn>
-                    </a></li>
-                <li><a href="#"> Quienes Somos
-                    <sapn class="fas fa-users"></sapn>
-                    </a></li>
-                <li><a href="#"> Contacto
-                    <sapn class="fas fa-tty"></sapn>
-                    </a></li>  
+        <nav role="navigation">
+            <ul id="menu-options">
+                <input type="checkbox" />
+                    <li><a href="#"> Productos
+                        <span class="fas fa-carrot"></span>
+                        </a></li>
+                    <li><a href="#"> Zonas de Envío
+                        <sapn class="fas fa-map-marked-alt"></sapn>
+                        </a></li>
+                    <li><a href="#"> Quienes Somos
+                        <sapn class="fas fa-users"></sapn>
+                        </a></li>
+                    <li><a href="#"> Contacto
+                        <sapn class="fas fa-tty"></sapn>
+                        </a></li>  
             </ul>
         </nav>
+
+        <form action="/login" method="POST">
+            <p>
+                <label>   Nombre:</label>
+                <input type="text" name="usuario">
+            </p>
+            <p>
+                <label> Contrasena:</label>
+                <input type="password" name="contrasena">
+            </p>
+            <p>
+               <button type="submit">Enviar</button>
+            </p>
+        </form>
     </header>
     <section>
         <img src=/images/capture.png  alt="videoFrutas" width=100% >
