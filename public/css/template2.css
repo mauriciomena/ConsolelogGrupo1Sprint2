@@ -7,21 +7,33 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
- .banner {
-    background-color: rgb(212, 211, 209);
-    border: 1px solid  cornsilk;
+
+.banner {
+    background-color: white;
+    border: 1px solid  white;
+    text-align: center;
+    color: #56e1b1;
+    font-weight: bold;
+    font-size: 12px;
+    position: relative;
+    z-index: 10;
 }
+
+
 
 
 /* header */
 header{
-    background-color:  #4C8055;
-    border: 1px solid  #4C8055;
+    background-color: #8cb944;
+    border: 1px solid  #8cb944;
     width: 100%;
     box-sizing: border-box;
     text-align: center;
-    align-items: center;
-    padding: 5px;
+    align-items: flex-start;
+    align-content: center;
+    justify-content: space-around;
+    display: flex;
+    position: fixed;
 }
 
 
@@ -30,9 +42,9 @@ header{
 
 header nav{
     text-align: center;
-    background-color: beige;
-    margin: 5px;
+    background-color: #8cb944;
     align-items: center;
+    visibility: visible;
 }
 header nav ul li{
     list-style: none;
@@ -40,57 +52,21 @@ header nav ul li{
 }
 header nav ul a{
     text-decoration: none;
-    color: black;
-}
-
-/* header login */
-header .buscador{
-    padding: 10px;
-    margin: 15px;
-    border: none;
-    border-radius: 5px;
-    float: right;
-    margin-top: 0px;    
-}
-header .contenedor{
-    width: 28px;
-    border-radius: 5px;
-    margin-left: auto;
-
-}
-header .contenedor span{
-    position: absolute;
-    padding: 5px;
-    margin-top: -45px;
-    margin-left: 200px;
-    color: #666;
-}
-header i{
-    background: chocolate;
     color: white;
-    padding: 10px;
-    margin-left: 45%;
-    border-radius: 5px;
-    position: absolute;
-    margin-top: -100px;
+    font-size: 15px;
 }
-header span{
-    margin-left: 0px;
-}
-
 
     /*footer */ 
 
 footer{
-    margin-top: 100px ;
-    background-color: cornsilk;
+    background-color: #f6d866;
 }
 footer div{
         text-align: center;
     }
     footer i{
-        color: #4C8055;
-        font-size: 14px;    
+        color: #8cb944;
+        font-size: 15px;    
     }
 
     
@@ -102,44 +78,108 @@ footer div{
         color: #666;
         line-height: 20px;
         height: 100px;
+        font-size: 12px;
     }
     footer h3{
         color: #666;
-        letter-spacing: 1px;
+        font-size: 12px;
     }
     footer h5{
-        color: #666;
+        color: white;
+        line-height: 30px;
     }
+
 @media (min-width: 361px){
     /* header */
    
     header{
         width: 100%;
-        height: 100%;
+        height: 80px;
     }
     header p{
         font-size: 12px;
-        margin-left: 60%;
-        margin-top: -35px;
     }
-   
-    header i{
-        margin-left: -100%;
+
+ .banner {
+        font-size: 8px;
+    }
+
+    .logo {
+        height: 50px;
+        align-content: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
     
     header nav{
+        display: none;
+        visibility: hidden;
+    }
+    
+    header nav ul{
+        visibility: hidden;
+    }
+        
+    }
+    header nav ul li{
+        visibility: hidden;
+    }
+
+    header form {
+        display: none;
+        visibility: hidden;
+    }
+
+    header input {
+        width: 90px;
+    }
+    header button {
+        font-size: 10px;
+        color: #666;
+    }
+
+    footer p{
+        margin: 0;
+        line-height: 25px;
+        width: 100%;
+        height: 100%;
+    }
+    footer h5{
+        font-size: 10px;
+        display: flex;
+    }
+
+@media (min-width: 769px) {
+    .banner {
+        font-size: 15px;
+    }
+
+    header{
+        width: 100%;
+        height: 100px;
+    }
+
+    .logo {
+        height: 90px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    header nav{
         margin-left: 15px;
-        margin-top: 20px;
+        margin-top: 30px;
         display: flex;
         justify-content:space-between;
         align-content: center;
         align-items: center;
+        visibility: visible;
     }
     
     header nav ul{
         display: flex;
         align-content: center;
         align-items: center;
+        visibility: visible;
     }
         
     }
@@ -151,33 +191,23 @@ footer div{
         margin-left: 10px;
         align-content: center;
         align-items: center;
-    }
-    
-    header .buscador{
-        width: 300px;
-        position: absolute;
-        margin-left: 165px;
+        visibility: visible;
     }
 
-    header .contenedor{
-        margin-right: 280px;
-    }
-
-    footer p{
-        margin: 0;
-        line-height: 25px;
-    }
-    footer h5{
-        font-size: 10px;
+    header form {
+        color: white;
+        font-size: 15px;
+        border: #56e1b1;
+        border-radius: 5px;
+        float: right;
+        margin-top: 15px;
+        margin-left: 50px;
         display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        visibility: visible;
     }
 
-@media (min-width: 769px) {
-  /* header */
-    header{
-        width: 100%;
-        height: 100%;
-    }
        
     footer section .padre{
         display: flex;
@@ -185,7 +215,7 @@ footer div{
     }
     footer p{
         margin: 0;
-        line-height: 25px;
+        line-height: 15px;
     }
     footer h5{
         font-size: 10px;
