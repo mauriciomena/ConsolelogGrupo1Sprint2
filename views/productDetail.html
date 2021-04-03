@@ -1,36 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/normalize.css" />
-    <link rel="stylesheet" href="/css/productDetail.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/normalize.css" />
+  <link rel="stylesheet" href="/css/productDetail.css" />
+  <link href="/css/template2.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <title>Document</title>
 </head>
+
 <body>
-  <header></header>
+  <p class="banner"> ¡REGISTRATE Y OBTENÉ UN 10% DE DESCUENTO EN TU PRIMERA COMPRA! ¡SI TU COMPRA ES MAYOR A $3500 TENÉS
+    EL ENVÍO BONIFICADO!</p>
+  <header>
+
+    <img class="logo" src=/images/logo3.png alt="Logo" height="80px">
+
+    <nav role="navigation">
+      <ul id="menu-options">
+        <input type="checkbox" />
+        <li><a href="#"> Productos
+            <span class="fas fa-carrot"></span>
+          </a></li>
+        <li><a href="#"> Zonas de Envío
+            <sapn class="fas fa-map-marked-alt"></sapn>
+          </a></li>
+        <li><a href="#"> Quienes Somos
+            <sapn class="fas fa-users"></sapn>
+          </a></li>
+        <li><a href="#"> Contacto
+            <sapn class="fas fa-tty"></sapn>
+          </a></li>
+      </ul>
+    </nav>
+
+    <form action="/login" method="POST">
+      <p>
+        <label> Nombre:</label>
+        <input type="text" name="usuario">
+      </p>
+      <p>
+        <label> Contrasena:</label>
+        <input type="password" name="contrasena">
+      </p>
+      <p>
+        <button type="submit">Enviar</button>
+      </p>
+    </form>
+  </header>
   <main>
     <article>
-      <img src="" alt="">
-      <ul></ul>
-      <button></button>
-      <h2 class="description"></h2>
-      <p></p>
+      <div class="imgproduct">
+        <img src="/images/naranja.jpeg" alt="naranja" class="naranja-img">
+      </div>
+      <div class="conteiner1">
+        <div class="product-desc">
+          <h4>Categoria</h4>
+          <h3>Producto</h3>
+          <h4>Precio</h4>
+        </div>
+        <div class="buttons">
+          <button type="button" class="cant-bt">- Cant +</button>
+          <button type="button" class="add-bt">Agregar</button>
+        </div>
+      </div>
     </article>
-    <div class="relproduct">
-      <h2></h2>
-      <div class="relproduct-img">
-<div class="imagen1"></div>
-<div class="imagen2"></div>
+    <div class="description">
+      <h2>Descripcion</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium veritatis expedita adipisci blanditiis
+        architecto voluptates cum, consequatur, consequuntur veniam ratione quisquam! Quae soluta sunt porro maxime
+        ipsam animi odio illum.
+      </p>
+    </div>
+    <h2 class="relproduct">Productos relacionados</h2>
+    <div class="row">
+      <div class="column">
+        <img src="/images/Manzana.webp" alt="Manzana" style="width: 100%;">
+        <div class="product-desc2">
+          <h5>Categoria</h5>
+          <h4>Producto</h4>
+          <h5>Precio</h5>
+        </div>
+        <div class="buttons2">
+          <button type="button" class="cant-bt">- Cant +</button>
+          <button type="button" class="add-bt">Agregar</button>
+        </div>
+      </div>
+      <div class="column">
+        <img src="/images/banana.jpg" alt="Banana" style="width: 100%;">
+        <div class="product-desc2">
+          <h5>Categoria</h5>
+          <h4>Producto</h4>
+          <h5>Precio</h5>
+        </div>
+        <div class="buttons2">
+          <button type="button" class="cant-bt">- Cant +</button>
+          <button type="button" class="add-bt">Agregar</button>
+        </div>
+      </div>
+      <div class="column2">
+        <img src="/images/frutilla.jpeg" alt="frutilla" style="width: 100%;">
+        <div class="product-desc2">
+          <h5>Categoria</h5>
+          <h4>Producto</h4>
+          <h5>Precio</h5>
+        </div>
+        <div class="buttons2">
+          <button type="button" class="cant-bt">- Cant +</button>
+          <button type="button" class="add-bt">Agregar</button>
+        </div>
+      </div>
+      <div class="column2">
+        <img src="/images/pera.jpeg" alt="perz" style="width: 100%;">
+        <div class="product-desc2">
+          <h5>Categoria</h5>
+          <h4>Producto</h4>
+          <h5>Precio</h5>
+        </div>
+        <div class="buttons2">
+          <button type="button" class="cant-bt">- Cant +</button>
+          <button type="button" class="add-bt">Agregar</button>
+        </div>
       </div>
     </div>
   </main>
-  <footer></footer>  
+  <footer>
+    <section>
+      <br>
+      <div class="padre">
+        <div class="hijo">
+          <i class="fas fa-credit-card"></i>
+          <h3>Pagá con tarjeta o en efectivo</h3>
+          <p class="parrafo">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago.
+            ¡Y
+            siempre es seguro!</p>
+        </div>
+        <div class="padre">
+          <div class="hijo">
+            <i class="fas fa-gift"></i>
+            <h3>Envío gratis desde $2.500</h3>
+            <p class="parrafo">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+              productos. Es un beneficio de Mercado Puntos.</p>
+          </div>
+        </div>
+        <div class="padre">
+          <div class="hijo">
+            <i class="fas fa-user-shield"></i>
+            <h3>Seguridad, de principio a fin</h3>
+            <p class="parrafo">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+              porque estás siempre protegid@.</p>
+          </div>
+        </div>
+    </section>
+    <section>
+      <article>
+        <h5>Copyright © 1999-2021 VerduMarket S.R.L.</h5>
+      </article>
+    </section>
+  </footer>
 </body>
+
 </html>
