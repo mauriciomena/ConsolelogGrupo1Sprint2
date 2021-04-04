@@ -76,6 +76,7 @@ main div{
 }
 
 main section {
+    width: 70%;
     margin: 63px;
     display: flex;
     flex-wrap: wrap;
@@ -86,11 +87,11 @@ main section {
 }
 
 main section form {
+    width: 50%;
     padding: 30px;
     margin: 50px;
     border-radius: 5px;
     border: none;
-    width: 40%;
     background-color:#666;
     color: white;
     display: flex;
@@ -103,10 +104,8 @@ main section form {
 
 main section nav{
     padding: 10px;
-    margin-right: 10px;
     border-radius: 5px;
     border: none;
-    width: 30%;
     background-color:#8cb944;
     color: white;
     display: flex;
@@ -198,7 +197,7 @@ footer div{
     header nav ul{
         visibility: hidden;
     }  
-    }
+    
     header nav ul li{
         visibility: hidden;
     }
@@ -216,6 +215,8 @@ footer div{
         color: #666;
     }
 
+
+    
     footer p{
         margin: 0;
         line-height: 25px;
