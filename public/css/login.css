@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+/*----------------header----------------------------- */ 
+.banner {
+    background-color: white;
+    border: 1px solid  white;
+    text-align: center;
+    color: #56e1b1;
+    font-weight: bold;
+    font-size: 12px;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+}
+
+header {
+    background-color: #8cb944;
+    border: 1px solid  #8cb944;
+    width: 100%;
+    
+}
+.staticHeader {
+    background-color: #8cb944;
+    border: 1px solid  #8cb944;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    display: flex;
+    position: fixed;
+}
+
+
+/* header menu */
+
+
+header nav{
+    text-align: center;
+    align-items: center;
+    visibility: visible;
+}
+header nav ul li{
+    list-style: none;
+    overflow: auto;
+}
+header nav ul a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+ .basket {
+    font-size: 30;
+    color: white;
+    align-items: center;
+    z-index: 10
+}
+/*----------------main----------------------------- */ 
+
+main {
+    background-color: #666;
+    height: 400px;
+    width: 100%;
+}
+
+main div{
+    width: 100%;
+    height: 400px;
+}
+
+main section {
+    margin: 63px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+main section form {
+    padding: 30px;
+    margin: 50px;
+    border-radius: 5px;
+    border: none;
+    width: 40%;
+    background-color:#666;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+main section nav{
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 30%;
+    background-color:#8cb944;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+main section nav ul li{
+    list-style: none;
+    overflow: auto;
+    text-align: center;
+}
+main section nav ul a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+/*----------------footer----------------------------- */ 
+
+footer{
+    background-color: #f6d866;
+}
+footer div{
+        text-align: center;
+    }
+    footer i{
+        color: #8cb944;
+        font-size: 15px;    
+    }
+    
+    footer section{
+        text-align: center;
+    }
+    
+    footer p{
+        color: #666;
+        line-height: 20px;
+        height: 100px;
+        font-size: 12px;
+    }
+    footer h3{
+        color: #666;
+        font-size: 12px;
+    }
+    footer h5{
+        color: white;
+        line-height: 30px;
+    }
+
+
+/*---------------------adaptative screen----------------------------*/
+@media (min-width: 361px){
+    /* header */
+   
+.staticHeader{
+        width: 100%;
+        height: 65px;
+    }
+
+    header p{
+        font-size: 12px;
+    }
+
+    .banner {
+        font-size: 8px;
+        height: fit-content;
+    }
+    .basket {
+        font-size: large;
+        margin-top: 20px;
+    }
+    .logo {
+        height: 30px;
+        align-content: center;
+        margin-top: 15px;
+    }
+    header nav{
+        display: none;
+        visibility: hidden;
+    }
+    header nav ul{
+        visibility: hidden;
+    }  
+    }
+    header nav ul li{
+        visibility: hidden;
+    }
+
+    header form {
+        display: none;
+        visibility: hidden;
+    }
+
+    header input {
+        width: 90px;
+    }
+    header button {
+        font-size: 10px;
+        color: #666;
+    }
+
+    footer p{
+        margin: 0;
+        line-height: 25px;
+        width: 100%;
+        height: 100%;
+    }
+    footer h5{
+        font-size: 10px;
+        display: flex;
+    }
+
+@media (min-width: 769px) {
+    .banner {
+        font-size: 12px;
+    }
+
+    header section{
+        width: 100%;
+        height: 65px;
+    }
+
+    .logo {
+        height: 40px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+
+    .basket {
+        margin-top: 20px;
+        font-size: x-large;
+    }
+
+    header nav{
+        margin-left: 15px;
+        margin-top: 20px;
+        display: flex;
+        justify-content:space-between;
+        align-content: center;
+        align-items: center;
+        visibility: visible;
+    }
+    
+    header nav ul{
+        display: flex;
+        align-content: center;
+        align-items: center;
+        visibility: visible;
+    }
+        
+    }
+    header nav ul li{
+        margin: 5px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+        margin-left: 10px;
+        align-content: center;
+        align-items: center;
+        visibility: visible;
+    }
+
+    header form {
+        color: white;
+        font-size: 15px;
+        border: #56e1b1;
+        border-radius: 5px;
+        float: right;
+        margin-left: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        visibility: visible;
+    }
+
+       
+    footer section .padre{
+        display: flex;
+        justify-content: space-around;
+    }
+    footer p{
+        margin: 0;
+        line-height: 15px;
+    }
+    footer h5{
+        font-size: 10px;
+    }
+    footer section article{
+        display: flex;
+    }
+}
