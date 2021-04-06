@@ -1,0 +1,85 @@
+   /* Especificaciones del main del carrito de compras*/
+   .main-cart{
+      margin: 200px auto;
+      width: 330px;
+      color:#666; }
+
+        /*Formulario de registro*/
+        .main-cart section article{
+          margin-top:10px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        .main-cart section article .product-detail{
+          width: 60%;
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: column;
+        }
+
+        .main-cart section article .value{
+          align-self: center;
+
+        }
+        .main-cart section .form-control{
+            margin-top: 15px;
+            display: block;
+        }
+        .main-cart section .form-control .control{
+            width: 30px;
+            padding: 10px;
+            border: 1px solid #8cb944;
+            border-radius: 5px;
+            font-size: 16px;
+            color:#161d6f;
+        }
+        .main-cart section article hr{
+          border: 1px solid #666;
+        }
+        .main-cart section .buttons{
+            display: flex;
+            justify-content: center;
+        }
+        .main-cart section .button-form{
+            width:50%;
+            padding:15px; 
+            background-color:#98ded9;
+            color:#ffffff;
+            font-size: 16px;
+            text-align: center;
+            margin: 1px;
+            border:none
+        }
+      .main-cart section .form-control .control:focus{
+        background-color: #c7ffd8;
+      }
+      
+      .main-cart section .buttons{
+        width: 100%;
+        position: fixed;
+        bottom:0px;
+        left:0px;
+        display: flex;
+        justify-content: center;
+    }
+    .main-cart section .form-control .control:focus{
+      background-color:#56e1b1;
+    }
+    .main-cart section .button-form{
+        width:50%;
+        padding:15px; 
+        background-color:#f6d866;
+        color:#ffffff;
+        font-size: 16px;
+        text-align: center;
+        margin: 1px;
+        border:none
+    }
+    .main-cart section .form-control .submit{
+      background-color:#8cb944;
+      font-weight: bold;
+}
+      /*fin de Carrito de Compras*/

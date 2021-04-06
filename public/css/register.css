@@ -207,7 +207,7 @@
         .main-register section .register .button-form{
             width:50%;
             padding:15px; 
-            background-color:#98ded9;
+            background-color:#56e1b1;
             color:#ffffff;
             font-size: 16px;
             text-align: center;
@@ -217,6 +217,10 @@
       .main-register section .register .form-control .control:focus{
         background-color: #c7ffd8;
       }
+      .main-register section .register .submit{
+        background-color: #161d6f;
+        font-weight: bold;
+    }
         .main-register section .register .check{
           margin: 15px 0;
           font-size: 13px;
@@ -227,11 +231,7 @@
           margin: auto;
         }
         
-        .main-register section .register .submit{
-            background-color: #161d6f;
-            font-weight: bold;
-        }
+
 
         /*fin formulario de registro*/
-        /*ProductCart*/
-        main section articel 
+        
