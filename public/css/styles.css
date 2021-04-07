@@ -137,6 +137,11 @@ main .order {
 main .search {
   align-self: center;
   margin: 40px 0;
+  border-radius: 15px;
+  background: #e0e0e0;
+  /* box-shadow:  9px 9px 35px #bebebe,  -9px -9px 35px #ffffff; */
+  box-shadow:  8px 8px 30px #bebebe,
+             -8px -8px 30px #ffffff;
 }
 
 main section input {
