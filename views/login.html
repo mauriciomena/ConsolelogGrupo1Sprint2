@@ -14,51 +14,52 @@
 
 </head>
 <body>
-
-    <p class="banner"> ¡REGISTRATE Y OBTENÉ UN 10% DE DESCUENTO EN TU PRIMERA COMPRA! ¡SI TU COMPRA ES MAYOR A $3500 TENÉS EL ENVÍO BONIFICADO!</p>
-    <header>
-        <section class="staticHeader">
-            <img class="logo" src=/images/logo2b.png  alt="Logo" height="40px">
-            <nav role="navigation">
-                <ul id="menu-options">
-                        <li><a href="./views/productDetail.html"> Productos
-                            <span class="fas fa-carrot"></span>
-                            </a></li>
-                        <li><a href="#"> Zonas de Envío
-                            <sapn class="fas fa-map-marked-alt"></sapn>
-                            </a></li>
-                        <li><a href="#"> Quienes Somos
-                            <sapn class="fas fa-users"></sapn>
-                            </a></li>
-                        <li><a href="#"> Contacto
-                            <sapn class="fas fa-tty"></sapn>
-                            </a></li>  
-                </ul>
-            </nav>
-            <a class="basket" href="./views/productCart.html">  <sapn class="fas fa-shopping-basket"></sapn></a>
-        </section> 
-    </header> 
-        <main>
+<p class="banner"> ¡REGISTRATE Y OBTENÉ UN 10% DE DESCUENTO EN TU PRIMERA COMPRA! ¡SI TU COMPRA ES MAYOR A $3500 TENÉS EL ENVÍO BONIFICADO!</p>
+<header>
+    <section class="staticHeader">
+        <img class="logo" src=/images/logo2b.png  alt="Logo" height="40px">
+        <nav role="navigation">
+            <ul id="menu-options">
+                    <li><a href="./views/productDetail.html"> Productos
+                        <span class="fas fa-carrot"></span>
+                        </a></li>
+                    <li><a href="#"> Zonas de Envío
+                        <sapn class="fas fa-map-marked-alt"></sapn>
+                        </a></li>
+                    <li><a href="#"> Quienes Somos
+                        <sapn class="fas fa-users"></sapn>
+                        </a></li>
+                    <li><a href="#"> Contacto
+                        <sapn class="fas fa-tty"></sapn>
+                        </a></li>  
+            </ul>
+        </nav>
+        <a class="basket" href="./views/productCart.html">  <sapn class="fas fa-shopping-basket"></sapn></a>
+    </section> 
+    <section class="searchbar">
+        <input class="buscador" type="search" placeholder="Buscar productos">
+        <div class="lupe">
+            <span class="fas fa-search"></span>
+        </div>
+        <nav role="navigation">
+            <ul id="menu-loginregister">
+                    <li><a href="./views/login.html"> Ingresá a tu cuenta! </a></li>
+                    <li><a href="./views/register.html"> Creá tu cuenta! </a></li>
+            </ul>
+        </nav>
+    </section>
+</header> 
+<main>
             <div style="background-image: url('/images/capture.png');">
-                <section class="loginPage">
-                            <form action="/login" method="POST">
-                            <p>
-                                <label>   Usuario:</label>
-                                <input type="text" name="usuario">
-                            </p>
-                            <p>
-                                <label> Contrasena:</label>
-                                <input type="password" name="contrasena">
-                            </p>
-                            <p>
-                                <input type="radio">Recordame</button>
-                            </p>
-                            <p>
-                                <button type="submit">Enviar</button>
-                            </p>   
+                    <section class="forms-login">
+                        <form accion="./views/home.html" method="POST">
+                            <input class="form-l" type="text" placeholder="Nombre de usuario" name="usuario" />
+                            <input class="form-l" type="password" placeholder="Contraseña" name="clave" />
                         </form>
-                        <nav role="navigation">
-                            <ul id="menu-options">
+                            <input type="radio">Recordame</button>
+                            <input class="send-l" type="submit" value="Enviar"/> <a href="#"></a>
+                            <nav role="navigation">
+                            <ul class="menu-login">
                                     <li><a href="#">Recuperá tu contrasena
                                         </a></li>
                                     <li><a href="./views/register.html">REGISTRATE
@@ -67,12 +68,12 @@
                         </nav>
                 </section>
             
-        </main>
+</main>
         <footer>
-            <section >
+            <section>
                 <br>
-                        <div class="padre">
-                            <div class="hijo">
+                <div class="padre">
+                    <div class="hijo">
                         <i class="fas fa-credit-card"></i>
                         <h3>Pagá con tarjeta o en efectivo</h3>
                         <p class="parrafo">Tenés cuotas sin interés con tarjeta o efectivo en puntos de pago.</p>
@@ -100,6 +101,6 @@
             </section>
         </footer>
     
-</body>
-
-</html>
+    </body>
+    
+    </html>

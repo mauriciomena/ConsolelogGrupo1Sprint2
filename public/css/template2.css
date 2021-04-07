@@ -45,6 +45,7 @@ header {
     align-content: center;
     justify-content: space-between;
     display: flex;
+    position: fixed;
 }
 
 .searchbar nav {
@@ -170,7 +171,6 @@ footer div{
     .searchbar {
         width: 100%;
         height: 95px;
-        margin-bottom: 7px;
     }
     .banner {
         font-size: 8px;
