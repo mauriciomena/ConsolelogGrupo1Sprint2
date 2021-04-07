@@ -1,16 +1,13 @@
 const express = require('express')
 const app = express()
-
-const port = 3030
+const port = process.env.PORT;
 
 const path = require('path');
 app.use(express.static('public'));
 
-app.listen(port, () => {
+app.listen(port || 3030, () => {
     console.log('VerduMarket Run on port '+ port);
 });
-
-
 
 
 // ------ Rutas linkeadas ------ //
