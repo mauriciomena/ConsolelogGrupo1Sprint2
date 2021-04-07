@@ -5,7 +5,9 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
-/*----------------header----------------------------- */ 
+ 
+
+/* ----------------header----------------------------- */ 
 .banner {
     background-color: white;
     border: 1px solid  white;
@@ -62,6 +64,7 @@ header nav ul a{
     align-items: center;
     z-index: 10
 }
+
 /*----------------main----------------------------- */ 
 
 main {

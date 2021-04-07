@@ -55,9 +55,8 @@ header label:hover {
 
 
 /* --- Logo --- */
-.logo-verdu {
+a .logo-verdu {
   display: block;
-  width: 50%;
   max-width: 280px;
   padding: 8px;
 }
@@ -94,20 +93,26 @@ main .order {
   margin-bottom: 20px;
 }
 
+/* --- Botón orden y carrito --- */
 .order .order-button {
   border: none;
   border-radius: 4px;
   padding: 16px 32px;
   text-align: center;
   display: inline-block;
-  font-size: 16px;
   margin-bottom: 20px;
   transition-duration: 0.4s;
   cursor: pointer;
   text-transform: uppercase;
   background-color: #008cba;
-  color: #ffffff;
   align-self: center;
+  width: 40%;
+  min-width: 300px;
+}
+.order .order-button a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
 }
 .order .order-button:hover {
   background-color: rgba(0, 0, 0, 0.6);
@@ -133,13 +138,13 @@ main .order {
   padding-top: 10px;
 }
 
-/* --- Busqueda --- */
+
+/* --- Search bar --- */
 main .search {
   align-self: center;
   margin: 40px 0;
   border-radius: 15px;
   background: #e0e0e0;
-  /* box-shadow:  9px 9px 35px #bebebe,  -9px -9px 35px #ffffff; */
   box-shadow:  8px 8px 30px #bebebe,
              -8px -8px 30px #ffffff;
 }
@@ -161,7 +166,7 @@ main section .search-bar button {
 }
 
 
-/* --- Productos --- */
+/* --- 4 imágenes productos --- */
 main .products-main {
   display: flex;
   flex-wrap: wrap;
@@ -214,7 +219,6 @@ main .products-main {
 
 
 /* ------ Footer ------ */
-
 footer {
   background-color: #f6d866;
 }
@@ -265,21 +269,22 @@ footer h5 {
 }
 
 @media screen and (min-width: 769px) {
-  /* main .products-main {
-    flex-wrap: nowrap;
-  } */
-
-  /* .container {
+  /* --- 4 img productos --- */
+  .container {
     width: 50%;
-  } */
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .image {
+    height: 100%;
+  }
 
 
-
-
-
-
-
-
+  /* --- Search bar --- */
+  main section input {
+    width: 500px;    
+    padding-left: 25px;
+  }
 
 
   .flex-container {
