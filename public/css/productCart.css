@@ -1,8 +1,13 @@
    /* Especificaciones del main del carrito de compras*/
    .main-cart{
-      margin: 200px auto;
+      /* margin: 200px auto; */
+      margin: auto;
       width: 330px;
-      color:#666; }
+      color:#666;
+      display:flex;
+      flex-wrap:wrap;
+      justify-content: space-between;
+     }
 
         /*Formulario de registro*/
         .main-cart section article{
@@ -14,7 +19,6 @@
         }
 
         .main-cart section article .product-detail{
-          width: 60%;
           display: flex;
           flex-wrap: wrap;
           flex-direction: column;
@@ -29,16 +33,32 @@
             display: block;
         }
         .main-cart section .form-control .control{
-            width: 30px;
+            width: 70px;
             padding: 10px;
             border: 1px solid #8cb944;
             border-radius: 5px;
             font-size: 16px;
             color:#161d6f;
+            text-align: center;
         }
         .main-cart section article hr{
           border: 1px solid #666;
         }
+        .main-cart .total{
+          margin:5px; 
+          text-align: right;
+          display:flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: flex-end;
+          background-color: #8cb944;
+          color: #ffffff;
+          padding: 20px;
+        }
+        .main-cart h4{
+         font-weight: normal;
+        }
+
         .main-cart section .buttons{
             display: flex;
             justify-content: center;
@@ -51,17 +71,11 @@
             font-size: 16px;
             text-align: center;
             margin: 1px;
-            border:none
+            border:none;
         }
-      .main-cart section .form-control .control:focus{
-        background-color: #c7ffd8;
-      }
       
       .main-cart section .buttons{
         width: 100%;
-        position: fixed;
-        bottom:0px;
-        left:0px;
         display: flex;
         justify-content: center;
     }
@@ -81,5 +95,29 @@
     .main-cart section .form-control .submit{
       background-color:#8cb944;
       font-weight: bold;
-}
+    }
+    .main-cart .total-cart{
+      display:none;
+    }
+
+    .main-cart .balloon{
+      border: 1px #8cb944 solid;
+      width: 100%;
+      border-radius: 20px;
+      padding: 15px;
+      margin: 5px;
+      
+    }
       /*fin de Carrito de Compras*/
+@media (min-width: 769px){
+  .main-cart{
+    width: 760px;
+  }
+  .main-cart .list{
+    width: 60%;
+  }
+  .main-cart .total-cart{
+    width: 40%;
+    display:flex;
+  }
+}

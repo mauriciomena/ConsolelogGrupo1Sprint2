@@ -13,48 +13,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
   <title>Carrito</title>
 </head>
-
 <body>
-  <p class="banner"> ¡REGISTRATE Y OBTENÉ UN 10% DE DESCUENTO EN TU PRIMERA COMPRA! ¡SI TU COMPRA ES MAYOR A $3500
-    TENÉS EL ENVÍO BONIFICADO!</p>
-  <header>
-      <img class="logo" src=/images/logo3.png  alt="Logo" height="80px">
-      <nav role="navigation">
-          <ul id="menu-options">
-                  <li><a href="#"> Productos
-                      <span class="fas fa-carrot"></span>
-                  </a></li>
-              <li><a href="#"> Zonas de Envío
-                      <sapn class="fas fa-map-marked-alt"></sapn>
-                  </a></li>
-              <li><a href="#"> Quienes Somos
-                      <sapn class="fas fa-users"></sapn>
-                  </a></li>
-              <li><a href="#"> Contacto
-                      <sapn class="fas fa-tty"></sapn>
-                  </a></li>
-          </ul>
-      </nav>
-
-      <form action="/login" method="POST">
-          <p>
-              <label> Nombre:</label>
-              <input type="text" name="usuario">
-          </p>
-          <p>
-              <label> Contrasena:</label>
-              <input type="password" name="contrasena">
-          </p>
-          <p>
-              <button type="submit">Enviar</button>
-          </p>
-      </form>
-  </header>
   <main class="main-cart">
-    <section>
+    <section class="list">
       <h2>Mi pedido</h2>
       <form action="/" class="cart-items">
-        
         <article>
           <i class="fas fa-trash"></i>
           <div class="product-detail">  
@@ -110,7 +73,7 @@
         <article>
           <i class="fas fa-trash"></i>
           <div class="product-detail">
-            <h3>Kiwi pa la zposas</h3>
+            <h3>Kiwi</h3>
             <h5>Valor por Kilo</h5>
             <h4>Cantdad</h4>
           </div>  
@@ -119,14 +82,39 @@
           </div>
           <h3 class="value">$130</h3>
         </article>
+        <hr>
+        <div class="total">
+          <i class="fas fa-truck"></i>
+          <h4>Total:$1.500,45</h4>
+        </div>
         <div class="form-control buttons">
-          <input type="submit" value="Continuar"         class="submit button-form">
-          <input type="reset" value="Volver a productos" class="button-form">
+          <input type="submit" value="Continuar"          class="submit button-form">
+          <input type="reset"  value="Volver a productos" class="button-form">
+        </div>
+      </form>
+    </section>
+    <section class="total-cart">
+      <form action="/" class="rigth-form" >
+        <div class="resume balloon">
+          <p>Total del Pedido</p>
+          <h3>$1.500,45</h3>
+          <p>Código de Descuento</p>
+          <input type="text" name="disconunt-cod" id="disconunt-cod">
+          <p>Total cón descuento:</p>
+          <h2>$1.500,45</h2>
+        </div>
+        <div class="shipping balloon">
+          <h3>Detalle de Envío</h3>
+          <p>su pedido sera entregado en</p>
+          <p>San Martin 455 PB <a href="/">cambiar</a></p>
+          <h3>Costo: $200</h3>
+        </div>
+        <div class="total-total balloon">
+          <h3>Total a Abonar</h3>
+          <h2>$1.700,45</h2>
         </div>
       </form>
     </section>
   </main>
-  <footer></footer>
 </body>
-
 </html>
