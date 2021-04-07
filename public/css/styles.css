@@ -219,25 +219,23 @@ main .products-main {
 
 /* ------ Banners pre-footer ------ */
 .banner-container {
-  border: 2px solid red;
   width: 100%;
-  height: 200px;
+  padding: 15px 0;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .banner-container article {
   width: 100%;
+  max-width: 540px;
   height: 100%;
-  border: 2px solid blue;
 }
 
 .banner-container article img {
   display: block;
+  cursor: pointer;
 }
-
-
-
 
 
 
