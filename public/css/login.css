@@ -53,6 +53,12 @@ main nav ul a {
 body{
     font-family: 'Roboto', sans-serif;
 }
+<<<<<<< HEAD
+=======
+ 
+
+/* ----------------header----------------------------- */ 
+>>>>>>> 1ea4942ae7b87948a9036c24624b7fa8ad02373d
 .banner {
     background-color: white;
     border: 1px solid  white;
@@ -120,6 +126,11 @@ header {
     align-items: center;
     visibility: visible;
 }
+<<<<<<< HEAD
+=======
+
+/*----------------main----------------------------- */ 
+>>>>>>> 1ea4942ae7b87948a9036c24624b7fa8ad02373d
 
 .buscador{
     padding: 3px;

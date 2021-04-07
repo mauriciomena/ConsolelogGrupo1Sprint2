@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href='/css/register.css' />
-  <link rel="stylesheet" href='/css/normalize.css' />
+  <link rel="stylesheet" href='/css/normalize.css'/>
+  <link rel="stylesheet" href='/css/register.css'/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
@@ -15,22 +15,26 @@
 
 <body>
   <header>
-    <nav role="navigation">
-      <div id="menu-options">
-        <input type="checkbox" />
-        <span></span>
-        <span></span>
-        <span></span>
-        <ul id="menu">
-          <a href="#"><li>Productos</li></a>
-          <a href="#"><li>Zonas de Envío</li></a>
-          <a href="#"><li>Quienes Somos</li></a>
-          <a href="#"><li>Contacto</li></a>         
-        </ul>
+    <a href="/">
+      <img src="/images/logo2b.png" alt="Logo" class="logo-verdu">
+    </a>
+    <div class="hamburger-container">
+      <input type="checkbox" id="btn-menu" />
+      <div class="btn-container">
+        <label for="btn-menu"><i class="fas fa-bars fa-1x"></i></label>
       </div>
-    </nav>
-    <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="Vegetales">
+      <nav class="menu">
+        <ul>
+          <li><a href="/views/productDetail.html">Productos</a></li>
+          <li><a href="#">Quienes Somos</a></li>
+          <li><a href="/views/register.html">Registrate</a></li>
+          <li><a href="/views/login.html">Ingresá</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
+
   <main class="main-register">
     <section>
       <div class="register">
@@ -116,9 +120,42 @@
             <input type="reset" value="Limpiar" class="button-form">
           </div>
         </form>
+      </div>  
     </section>
   </main>
-  </div>
+
+  <footer>
+    <section>
+      <br>
+      <div class="padre">
+          <div class="hijo">
+              <i class="fas fa-credit-card"></i>
+              <h3>Pagá con tarjeta o en efectivo</h3>
+              <p class="parrafo">Tenés cuotas sin interés con tarjeta o efectivo en puntos de pago.</p>
+                  </div>
+              <div class="padre">
+                  <div class="hijo">
+              <i class="fas fa-gift"></i>
+              <h3>Envío gratis desde $2.500</h3>
+              <p class="parrafo">Solo por estar registrad@ en VerduMarket tenés envíos gratis. </p>
+                  </div>
+          </div>
+              <div class="padre">
+                  <div class="hijo">
+              <i class="fab fa-facebook-square"></i> 
+              <i class="fab fa-instagram"></i>
+              <h3>Seguinos en nuestras redes</h3>
+              <p class="parrafo">Enterate de nuestras ofertas y actualidades.</p>
+                  </div>
+          </div>
+  </section>
+  <section>
+      <article>
+          <h5>Copyright © 1999-2021 VerduMarket S.R.L.</h5>
+      </article>
+  </section>
+  </footer>
+  
 </body>
 
 </html>

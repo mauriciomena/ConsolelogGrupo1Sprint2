@@ -20,7 +20,9 @@
   <body>
 
     <header>
-      <img src="/images/logo2b.png" alt="Logo" class="logo-verdu">
+      <a href="/">
+        <img src="/images/logo2b.png" alt="Logo" class="logo-verdu">
+      </a>
       <div class="hamburger-container">
         <input type="checkbox" id="btn-menu" />
         <div class="btn-container">
@@ -28,9 +30,10 @@
         </div>
         <nav class="menu">
           <ul>
-            <li><a href="#">Productos</a></li>
-            <li><a href="#">Zonas de Envío</a></li>
+            <li><a href="/views/productDetail.html">Productos</a></li>
             <li><a href="#">Quienes Somos</a></li>
+            <li><a href="/views/register.html">Registrate</a></li>
+            <li><a href="/views/login.html">Ingresá</a></li>
             <li><a href="#">Contacto</a></li>
           </ul>
         </nav>
@@ -44,7 +47,9 @@
           Encuentra las mejores frutas y verduras en nuestro market.<br>¡Anímate y
           explora!
         </p>
-        <button class="order-button">¡Haz tu pedido aquí!</button>
+        <button class="order-button">
+          <a href="/views/productCart.html">¡Haz tu pedido aquí!</a>          
+        </button>
       </section>
 
       <div class="background-video">
@@ -71,6 +76,12 @@
           </div>
         </article>
         <article class="container">
+          <img src="/images/products-bol.jpg" alt="Avatar" class="image" style="width:100%">
+          <div class="detail">
+            <div class="text">Bolsones</div>
+          </div>
+        </article>
+        <article class="container">
           <img src="/images/products-diet.jpg" alt="Avatar" class="image" style="width:100%">
           <div class="detail">
             <div class="text">Productos Dieteticos</div>
@@ -83,10 +94,13 @@
           </div>
         </article>
       </section>
-
-
-
     </main>
+
+    <section class="banner-container">
+      <article class="banner-facebook">
+        <img src="/images/banner-facebook.jpg" alt="Banner facebook" style="width:100%">
+      </article>
+    </section>
 
     <footer>
       <section>
