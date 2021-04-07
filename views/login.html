@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/normalize.css">
     <link href="/css/login.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -15,6 +16,29 @@
 </head>
 <body>
 <p class="banner"> ¡REGISTRATE Y OBTENÉ UN 10% DE DESCUENTO EN TU PRIMERA COMPRA! ¡SI TU COMPRA ES MAYOR A $3500 TENÉS EL ENVÍO BONIFICADO!</p>
+
+<header>
+    <a href="/">
+      <img src="/images/logo2b.png" alt="Logo" class="logo-verdu">
+    </a>
+    <div class="hamburger-container">
+      <input type="checkbox" id="btn-menu" />
+      <div class="btn-container">
+        <label for="btn-menu"><i class="fas fa-bars fa-1x"></i></label>
+      </div>
+      <nav class="menu">
+        <ul>
+          <li><a href="/views/productDetail.html">Productos</a></li>
+          <li><a href="#">Quienes Somos</a></li>
+          <li><a href="/views/register.html">Registrate</a></li>
+          <li><a href="/views/login.html">Ingresá</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<!-- 
 <header>
     <section class="staticHeader">
         <img class="logo" src=/images/logo2b.png  alt="Logo" height="40px">
@@ -48,7 +72,9 @@
             </ul>
         </nav>
     </section>
-</header> 
+</header>  -->
+
+
 <main>
             <div style="background-image: url('/images/capture.png');">
                     <section class="forms-login">
