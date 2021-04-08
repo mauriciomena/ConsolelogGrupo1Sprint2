@@ -6,52 +6,40 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/normalize.css" />
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/template2.css">
+  <link rel="stylesheet" href="/css/header-footer.css" />
   <link rel="stylesheet" href="/css/productDetail.css" />
-  <link href="/css/template2.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
   <title>Document</title>
 </head>
 
 <body>
   <p class="banner"> ¡REGISTRATE Y OBTENÉ UN 10% DE DESCUENTO EN TU PRIMERA COMPRA! ¡SI TU COMPRA ES MAYOR A $3500 TENÉS
     EL ENVÍO BONIFICADO!</p>
-  <header>
-
-    <img class="logo" src=/images/logo3.png alt="Logo" height="80px">
-
-    <nav role="navigation">
-      <ul id="menu-options">
-        <input type="checkbox" />
-        <li><a href="#"> Productos
-            <span class="fas fa-carrot"></span>
-          </a></li>
-        <li><a href="#"> Zonas de Envío
-            <sapn class="fas fa-map-marked-alt"></sapn>
-          </a></li>
-        <li><a href="#"> Quienes Somos
-            <sapn class="fas fa-users"></sapn>
-          </a></li>
-        <li><a href="#"> Contacto
-            <sapn class="fas fa-tty"></sapn>
-          </a></li>
-      </ul>
-    </nav>
-
-    <form action="/login" method="POST">
-      <p>
-        <label> Nombre:</label>
-        <input type="text" name="usuario">
-      </p>
-      <p>
-        <label> Contrasena:</label>
-        <input type="password" name="contrasena">
-      </p>
-      <p>
-        <button type="submit">Enviar</button>
-      </p>
-    </form>
-  </header>
+    <header>
+      <a href="/">
+        <img src="/images/logo2b.png" alt="Logo" class="logo-verdu">
+      </a>
+      <div class="hamburger-container">
+        <input type="checkbox" id="btn-menu" />
+        <div class="btn-container">
+          <label for="btn-menu"><i class="fas fa-bars fa-1x"></i></label>
+        </div>
+        <nav class="menu">
+          <ul>
+            <li><a href="/views/productDetail.html">Productos</a></li>
+            <li><a href="#">Quienes Somos</a></li>
+            <li><a href="/views/register.html">Registrate</a></li>
+            <li><a href="/views/login.html">Ingresá</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
   <main>
     <article>
       <div class="imgproduct">
@@ -59,21 +47,21 @@
       </div>
       <div class="conteiner1">
         <div class="product-desc">
-          <h4>Categoria</h4>
-          <h3>Producto</h3>
-          <h4>Precio</h4>
+          <h4>Fruta</h4>
+          <h3>Naranja</h3>
+          <h4>$100</h4>
         </div>
         <div class="buttons">
-          <button type="button" class="cant-bt">- Cant +</button>
-          <button type="button" class="add-bt">Agregar</button>
-        </div>
+        <form action="" method="POST">
+          <input type="submit" value="- Cant +" class="cant-bt"> 
+          <input type="submit" value="Enviar" class="add-bt">        
+        </form>
+      </div>
       </div>
     </article>
     <div class="description">
       <h2>Descripcion</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium veritatis expedita adipisci blanditiis
-        architecto voluptates cum, consequatur, consequuntur veniam ratione quisquam! Quae soluta sunt porro maxime
-        ipsam animi odio illum.
+      <p>La <strong>naranja</strong> es una de las frutas más populares ya que tiene un alto contenido en vitamina C, 100 gramos de naranja contiene el 90% de necesidades diarias de esta vitamina. Además contiene flavonoides (con efectos antioxidante, antiinflamatorio y antitumoral) y limonoides (anticancerígeno).
       </p>
     </div>
     <h2 class="relproduct">Productos relacionados</h2>
@@ -132,35 +120,32 @@
     <section>
       <br>
       <div class="padre">
-        <div class="hijo">
-          <i class="fas fa-credit-card"></i>
-          <h3>Pagá con tarjeta o en efectivo</h3>
-          <p class="parrafo">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago.
-            ¡Y
-            siempre es seguro!</p>
-        </div>
-        <div class="padre">
           <div class="hijo">
-            <i class="fas fa-gift"></i>
-            <h3>Envío gratis desde $2.500</h3>
-            <p class="parrafo">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
-              productos. Es un beneficio de Mercado Puntos.</p>
+              <i class="fas fa-credit-card"></i>
+              <h3>Consultá nuestros medios de pago aquí</h3>
+              <p class="parrafo">Tenés cuotas sin interés con tarjeta o efectivo en puntos de pago.</p>
+                  </div>
+              <div class="padre">
+                  <div class="hijo">
+              <i class="fas fa-gift"></i>
+              <h3>Bolsones y Envíos sin costo</h3>
+              <p class="parrafo">Solo por estar registrad@ en VerduMarket tenés envíos gratis. </p>
+                  </div>
           </div>
-        </div>
-        <div class="padre">
-          <div class="hijo">
-            <i class="fas fa-user-shield"></i>
-            <h3>Seguridad, de principio a fin</h3>
-            <p class="parrafo">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
-              porque estás siempre protegid@.</p>
+              <div class="padre">
+                  <div class="hijo">
+              <i class="fab fa-facebook-square"></i> 
+              <i class="fab fa-instagram"></i>
+              <h3>Seguinos en nuestras redes</h3>
+              <p class="parrafo">Enterate de nuestras ofertas y actualidades.</p>
+                  </div>
           </div>
-        </div>
-    </section>
-    <section>
+  </section>
+  <section>
       <article>
-        <h5>Copyright © 1999-2021 VerduMarket S.R.L.</h5>
+          <h5>Copyright © 2021 VerduMarket S.R.L.</h5>
       </article>
-    </section>
+  </section>
   </footer>
 </body>
 
