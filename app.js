@@ -47,7 +47,3 @@ app.get('/views/productCart.html', (req, res) => {
 app.get('/template2', (req, res) => {
     res.sendFile(path.join(__dirname, './views/template2.html'));
 });
-
-
-
-
