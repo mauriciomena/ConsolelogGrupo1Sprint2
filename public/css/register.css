@@ -90,7 +90,11 @@ marquee {
     width: 600px;
   }
   
-.main-register section .register img {
-  width: 300px;
-}
+  .main-register section .register img {
+    width: 300px;
+  }
+  body {
+    background-image: url('/images/fondo-cart.jpg');
+    background-size: cover;
+   }
 }
