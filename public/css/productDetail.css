@@ -9,6 +9,7 @@ body {
   background-color: #f6f6f6;
 }
 
+
 /* Trabajo sobre el nav */
 @media screen and (min-width: 361px) {
 article{
@@ -47,7 +48,6 @@ nav {
       margin-right: 18%;
       margin-left: 18%;
       width: 64%;
-      border: solid 4px red;
 }
 .cant-bt{
   background-color: #f88f01;
@@ -88,6 +88,9 @@ nav {
 
 .product-desc2{
     text-align: left;
+}
+.descrel{
+  font-weight: bold;
 }
 }
 
