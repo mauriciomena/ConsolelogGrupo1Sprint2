@@ -38,7 +38,7 @@
           display: none;
         }
         .main-cart section article .fa-trash{
-          trantion:all 350ms;
+          transition:all 350ms;
         }
         .main-cart section article .fa-trash:hover{
           color: #8cb944;
