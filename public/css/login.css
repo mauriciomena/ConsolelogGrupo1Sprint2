@@ -11,7 +11,8 @@
     
   }
   .image{
-    background-image: url('/images/capture.png');
+    /* background-image: url('/images/capture.png'); */
+    background-image: url('/images/fondo-cart.jpg');
     background-size: cover;
   }
   /* ------ Header y Menu Hamburguesa ------*/
@@ -84,8 +85,9 @@
      
 }
 main{
-    color: white;
-    font-weight: bolder;
+    /* color: white; */
+    color:#ffffff;
+    font-weight: bold;
 }
 .form-l{
     padding: 10px;
