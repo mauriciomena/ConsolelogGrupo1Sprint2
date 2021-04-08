@@ -8,8 +8,12 @@
   body {
     font-family: "Roboto", sans-serif;
     background-color: #f6f6f6;
+    
   }
-  
+  .image{
+    background-image: url('/images/capture.png');
+    background-size: cover;
+  }
   /* ------ Header y Menu Hamburguesa ------*/
   header {
     width: 100%;

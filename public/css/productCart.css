@@ -11,8 +11,9 @@
       width: 100%;
      }
      .main-cart .list h2{
-       color:#ffffff;
+       color:#666;
        font-size: 24px;
+       padding:15px;
      }
         .main-cart section article{
           margin-top:10px;
@@ -164,6 +165,9 @@
   }
   .main-cart .list{
     width: 60%;
+  }
+  .main-cart .list h2{
+    color:#ffffff;
   }
   .main-cart .total-cart{
     width: 40%;
