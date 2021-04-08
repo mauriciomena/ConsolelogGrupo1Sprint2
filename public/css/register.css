@@ -93,6 +93,10 @@ marquee {
   .main-register section .register img {
     width: 300px;
   }
+  .main-register .label{
+    color:#ffffff;
+    font-weight: bold;
+  }
   body {
     background-image: url('/images/fondo-cart.jpg');
     background-size: cover;
