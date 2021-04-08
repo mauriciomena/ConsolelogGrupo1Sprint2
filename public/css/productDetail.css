@@ -38,6 +38,12 @@ nav {
 .product-desc h3{
   margin: 8px 0px;
 }
+.column img{
+  border-radius: 6px;
+}
+.column2 img{
+  border-radius: 6px;
+}
 
 .buttons{
       color: white;
@@ -101,7 +107,7 @@ nav {
         justify-content: flex-start;
         margin-right: 10%;
         margin-left: 10%;
-        margin-top: 150px;
+        margin-top: 130px;
     }
      div .imgproduct{
         width: 60%;
@@ -115,15 +121,13 @@ nav {
         margin-left: 0%;
     }
     div .buttons{
-      border: solid 4px red;
+      
       margin-left: 0px;
       margin-right: 0px;
       width: 100%;
       display: flex;
     }
-    div .buttons div{
-      border: solid 4px red;
-    }
+
     .product-desc h3{
         font-size: 30px;
         font-weight: bold;
@@ -143,6 +147,5 @@ nav {
   margin: 15px;
   border-radius: 5px;
   }
-
     
 }
